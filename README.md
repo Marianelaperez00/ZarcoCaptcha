@@ -1,5 +1,7 @@
 # ZarcoCaptcha
 
+![ZarcoCaptcha](images/ZarcoCaptcha.png)
+
 A powerful and fully customizable CAPTCHA generator for Node.js.
 
 **Author:** ZarCodeX  
