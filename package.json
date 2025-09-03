@@ -1,0 +1,66 @@
+{
+  "name": "zarcocaptcha",
+  "version": "1.0.0",
+  "description": "A powerful and customizable CAPTCHA generator for Node.js, perfect for bot verification and security.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node examples/basic.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "captcha",
+    "security",
+    "image",
+    "verification",
+    "nodejs",
+    "node",
+    "anti-bot",
+    "human-check",
+    "captcha-generator",
+    "random-text",
+    "png",
+    "jpeg",
+    "svg",
+    "customizable",
+    "typescript",
+    "zarco",
+    "zarcodex",
+    "zarcocaptcha"
+  ],
+  "author": "ZarCodeX",
+  "license": "MIT",
+  "homepage": "https://github.com/ZarCodeX/ZarcoCaptcha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZarCodeX/ZarcoCaptcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZarCodeX/ZarcoCaptcha/issues"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "canvas": "^3.2.0",
+    "webp-wasm": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "jest": "^30.1.3",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
